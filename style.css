@@ -1,94 +1,95 @@
 :root {
-  --wine-red: #C7375F;
-  --bright-red: #D42D2F;
-  --dark-green: #344D2F;
-  --light-green: #77A047;
-  --gold: #FAC57D;
-  --snow: #F0F4F7;
+  --wine-red: #c7375f;
+  --bright-red: #d42d2f;
+  --dark-green: #344d2f;
+  --light-green: #77a047;
+  --gold: #fac57d;
+  --snow: #f0f4f7;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 body,
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
-    background-color: var(--bright-red);
-    height: 100vh;
+  background-color: var(--bright-red);
+  height: 100vh;
 }
 
 .container {
-    background: var(--snow);
-    color: var(--wine-red);
-    flex-direction: column;
-    border-radius: 10px;
-    padding: 2.5em;
-    font-size: 35px;
-    min-width: 330px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  background: var(--snow);
+  color: var(--wine-red);
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 2.5em;
+  font-size: 35px;
+  min-width: 330px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 span {
-    margin-right: 0.1em;
+  margin-right: 0.1em;
 }
 
 .material-icons-outlined {
-    padding-top: 5px;
-    margin: 0;
-    font-size: 30px;
+  padding-top: 5px;
+  margin: 0;
+  font-size: 30px;
 }
 
 button {
-    font-size: 1.2rem;
-    background-color: var(--dark-green);
-    color: var(--snow);
-    padding: 0.25em 0.5em;
-    margin-bottom: 2em;
-    border: none;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  font-size: 1.2rem;
+  background-color: var(--dark-green);
+  color: var(--snow);
+  padding: 0.25em 0.5em;
+  margin-bottom: 2em;
+  border: none;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 button:hover {
-    cursor: pointer;
-    transform: scale(1.02)
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
 .pause-btn {
-    background-color: var(--gold);
-    color: var(--wine-red)
+  background-color: var(--gold);
+  color: var(--wine-red);
 }
 
 .stop-btn {
-    background-color: var(--wine-red);
+  background-color: var(--wine-red);
 }
 
 .animate {
-    display: inline-block;
-    animation-name: ring;
-    animation-duration: 0.3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  display: inline-block;
+  animation-name: ring;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .animation-paused {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 @keyframes ring {
   from {
-      transform: rotate(-15deg);
+    transform: rotate(-15deg);
   }
   to {
-      transform: rotate(15deg);
+    transform: rotate(15deg);
   }
 }
-
-
